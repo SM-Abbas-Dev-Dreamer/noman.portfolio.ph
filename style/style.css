@@ -66,8 +66,8 @@ header nav {
   align-items: center;
 }
 header nav .logo {
-  width: 70px;
-  height: 70px;
+  width: 7vw;
+  height: 10vh;
 }
 header nav .logo img {
   width: 100%;
@@ -87,7 +87,7 @@ header nav .links ul li a {
   color: var(--para);
   position: relative;
   cursor: pointer;
-  font-size: 1.8vw;
+  font-size: 18px;
 }
 header nav .links ul li a::after {
   transition: 0.3s;
@@ -153,7 +153,7 @@ header nav .theme {
   color: var(--para);
   position: relative;
   cursor: pointer;
-  font-size: 1.8vw;
+  font-size: 18px;
 }
 .hamburger .links ul li a::after {
   transition: 0.3s;
@@ -169,6 +169,17 @@ header nav .theme {
 }
 .hamburger .links ul li a:hover::after {
   width: 100%;
+}
+@media (max-width: 850px){
+    header .logo{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 700px) {
+    header nav .links ul li a {
+        font-size: 14px;
+      }
 }
 @media (max-width: 600px) {
   #hamburger-menu-icon {
