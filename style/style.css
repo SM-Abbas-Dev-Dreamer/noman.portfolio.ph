@@ -153,7 +153,7 @@ header nav .theme {
   color: var(--para);
   position: relative;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 22px;
 }
 .hamburger .links ul li a::after {
   transition: 0.3s;
