@@ -1,5 +1,9 @@
 const themeToggleButton = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
+const hamburgerButton = document.getElementById('hamburger-menu-icon');
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const hamburger = document.querySelector(".hamburger");
+
 const body = document.body;
 
 themeToggleButton.addEventListener('click', () => {
@@ -22,3 +26,16 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 } else {
     body.classList.add('light-theme');
 }
+
+
+    hamburgerButton.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+    
+        if (hamburger.classList.contains('active')) {
+            hamburgerIcon.classList.remove('fa-bars');
+            hamburgerIcon.classList.add('fa-xmark');
+        } else {
+            hamburgerIcon.classList.remove('fa-xmark');
+            hamburgerIcon.classList.add('fa-bars');
+        }
+    });
