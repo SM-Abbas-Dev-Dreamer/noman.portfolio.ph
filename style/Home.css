@@ -69,6 +69,7 @@ section{
 .swiper-slide .content{
     display: flex;
     gap: 30px;
+    padding: 12px;
     flex-direction: column;
     text-shadow: 1px 1px 10px #000;
 }
