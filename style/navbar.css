@@ -210,8 +210,9 @@ header .hamburger .hamburger-inner .hamburger-btn button i{
   /* display: none; */
   position: absolute;
   width: 100%;
+  z-index: 9;
 
-  background-color: #444;
+  background-color: #000;
   text-align: center;
   transform: translateY(-150%);
   transition: 0.3s;
