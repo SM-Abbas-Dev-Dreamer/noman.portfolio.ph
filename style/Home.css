@@ -1,0 +1,175 @@
+section{
+    margin: 75px 0;
+}
+.container{ 
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.container .container-img{
+    width: 50%;
+    position: relative;
+}
+.container .social-media-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    transform: translate(0,-50%);
+}
+.container .social-media-links .link-media{
+
+    background: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+.container .social-media-links .link-media a{
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(15px);
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    transition: 0.3s ;
+}
+.container .social-media-links .link-media a:hover{
+    transform: translateY(-15px);
+
+}
+.container .container-img img{
+    z-index: -1;
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+
+}
+.swiper {
+    width: 50%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+.swiper-slide .content{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.swiper-slide .content .buttons{
+    display: flex;
+    gap: 30px;
+}
+.swiper-slide .content .buttons button{
+    width: 100px;
+    height: 30px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 400;
+    font-family: cursive;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.swiper-slide .content .buttons button:hover{
+    background: #fff;
+    color: #000;
+}
+.swiper-slide .content .buttons button.btn-secondary{
+    background: none;
+    border-bottom: 2px solid #000;
+    border-radius: 0px;
+    color: #000;
+    position: relative;
+    cursor: pointer;
+    
+}
+.swiper-slide .content .buttons button.btn-secondary::after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: gold;
+    transition: 0.3s;
+}
+.swiper-slide .content .buttons button.btn-secondary:hover::after{
+    width: 100%;
+}
+
+@media(min-width:1200px){
+    .container{
+        width: 70%;
+        margin: auto;
+    }
+    .swiper .content h1{
+        font-size: 36px;
+    }
+    .swiper .content p{
+        font-size: 25px;
+    }
+    .swiper .content .buttons button{
+        width: 150px;
+        height: 30px;
+        font-size: 20px;
+    }
+}
+@media(max-width:650px){
+    .container{
+        width: 97%;
+        position: relative;
+    }
+    .swiper{
+        width: 80%;
+        margin: auto;
+    }
+    .container .container-img{
+        position: absolute;
+        width: 80%;
+        opacity: 0.8;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+.fa-computer-mouse{
+    color: #000;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    animation: mouse 3s infinite linear;
+}
+@keyframes mouse {
+    0%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+
+#home{
+    margin-top: 200px;
+}

@@ -3,85 +3,265 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/favicon.jpg" style="border-radius: 50%;" type="image/jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style/style.css" />
-    <title>Noman Abbas</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/Home.css" />
+    <title>Nomi</title>
   </head>
   <body>
-    <header>
-      <button id="hamburger-menu-icon">
-        <i id="hamburger-icon" class="fa-solid fa-bars"></i>
-      </button>
-      <div class="hamburger">
-        <div class="links">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Service</a></li>
-            <li><a href="">Testimonial</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </div>
-
-      </div>
+    <div class="mobile-navigation">
+      <ul>
+        <li>
+          <a class="web-menu" href=""
+            ><i class="fa-solid fa-house"></i>
+            <span class="links-title">Home</span></a
+          >
+        </li>
+        <li>
+          <a class="web-menu" href=""
+            ><i class="fa-regular fa-user"></i>
+            <span class="links-title">About</span></a
+          >
+        </li>
+        <li>
+          <a class="web-menu" href=""
+            ><i class="fa-regular fa-star"></i>
+            <span class="links-title">Skills</span></a
+          >
+        </li>
+        <li>
+          <a class="web-menu" href=""
+            ><i class="fa-solid fa-pen"></i
+            ><span class="links-title">Services</span></a
+          >
+        </li>
+        <li>
+          <a class="web-menu" href=""
+            ><i class="fa-solid fa-cube"></i
+            ><span class="links-title">Portfolio</span></a
+          >
+        </li>
+        <li>
+          <a class="web-menu" href=""
+            ><i class="fa-regular fa-envelope"></i>
+            <span class="links-title">Contact</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <header id="header">
       <nav>
         <div class="logo">
-          <img src="assets/python-logo.png" alt="" />
+          <img src="assets/6479b9448caa384c54cdeceb1578b5ae.png" alt="" />
         </div>
-        <div class="links">
+        <div class="navigation">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Service</a></li>
-            <li><a href="">Testimonial</a></li>
-            <li><a href="">Contact</a></li>
+            <li>
+              <a class="web-menu" href=""
+                ><i class="fa-solid fa-house"></i>
+                <span class="links-title">Home</span></a
+              >
+            </li>
+            <li>
+              <a class="web-menu" href=""
+                ><i class="fa-regular fa-user"></i>
+                <span class="links-title">About</span></a
+              >
+            </li>
+            <li>
+              <a class="web-menu" href=""
+                ><i class="fa-regular fa-star"></i>
+                <span class="links-title">Skills</span></a
+              >
+            </li>
+            <li>
+              <a class="web-menu" href=""
+                ><i class="fa-solid fa-pen"></i
+                ><span class="links-title">Services</span></a
+              >
+            </li>
+            <li>
+              <a class="web-menu" href=""
+                ><i class="fa-solid fa-cube"></i
+                ><span class="links-title">Portfolio</span></a
+              >
+            </li>
+            <li>
+              <a class="web-menu" href=""
+                ><i class="fa-regular fa-envelope"></i>
+                <span class="links-title">Contact</span></a
+              >
+            </li>
           </ul>
         </div>
-        <div class="theme">
-          <button id="theme-toggle">
-            <i id="theme-icon" class="fas fa-sun"></i>
+        <div id="theme-toggle">
+          <button>
+            <i id="theme-icon" class="fa-solid fa-sun"></i>
           </button>
         </div>
       </nav>
-    </header>
-    <section id="home" class="first-page">
-      <div class="container">
-        <div class="content">
-          <h1>
-            Hi,I`m <span>Noman</span> Abbas <br />
-             I work in <span> Data Science </span> field
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-            possimus quia soluta temporibus beatae eveniet unde voluptatibus
-            sint ipsam! Itaque maiores illum cum magni ut.
-          </p>
-          <div class="buttons">
-            <button class="primary">Hire Me !</button>
-            <button class="">Download CV</button>
+      <div class="hamburger">
+        <div class="hamburger-inner">
+          <div class="hamburger-btn">
+            <button>
+              <i class="fa-solid hamburger-icon fa-bars"></i>
+            </button>
           </div>
         </div>
-        <div class="content-img">
-            <img src="assets/fgtfgh.png" alt="">
-            <img src="" alt="" class="numpy">
-            <img src="" alt="" class="matplot">
-            <img src="" alt="" class="pandas">
+      </div>
+    </header>
+    <section class="first-page" id="home">
+      <div class="container">
+        <i class="fa-solid  fa-computer-mouse"></i>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="content">
+                <h1>
+                  Hello, I'm <span>Numan Abbas</span> Now I worked inthe
+                  <span>Dat science feild</span>
+                </h1>
+                <p>
+                  I'm a creative and passionate freelance Pythons Developer . My
+                  goal is to create visually stunning and engaging Application
+                  that help clients achieve their goals.
+                </p>
+                <div class="buttons">
+                  <button href="#" class="btn">Hire Me !</button>
+                  <button href="#" class="btn btn-secondary">
+                    Download Cv
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <h1>
+                  Python enthusiast focused on <span> automation,</span>
+                   scripting, and building robust backend systems
+                </h1>
+                <p>
+                  Proficient in various Python frameworks
+                  and libraries,  
+                  ensuring maintainable and high-performance solutions. Adept at
+                  problem-solving and continuously learning to stay updated with
+                  industry trends.
+                </p>
+                <div class="buttons">
+                  <button href="#" class="btn">Hire Me !</button>
+                  <button href="#" class="btn btn-secondary">
+                    Download Cv
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <h1>
+                  Seasoned <span> Python developer </span> specializing in data
+                  analysis and <span> machine learning </span> solutions
+                </h1>
+                <p>
+                  Experienced Python developer with a strong background in
+                  building efficient and scalable applications
+                </p>
+                <div class="buttons">
+                  <button href="#" class="btn">Hire Me !</button>
+                  <button href="#" class="btn btn-secondary">
+                    Download Cv
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div  class="swiper-pagination"></div>
+        </div>
+        <div class="container-img">
+          <img src="assets/Untitled-1juklgyu.png" alt="" />
+        </div>
+        <div class="social-media-links">
+          <div class="link-media">
+            <a href="">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+          <div class="link-media">
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <div class="link-media">
+            <a href="">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, quia.
-    </p>
-    <script src="./js/script.js"></script>
+
+    <!-- 
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-x-twitter"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-solid fa-envelope"></i>
+    <i class="fa-solid fa-message"></i>
+    <i class="fa-solid fa-user"></i>
+    
+    
+    
+    
+    
+    
+    <i class="fa-solid fa-phone"></i>
+    <i class="fa-brands fa-github"></i> -->
+    <section style="height: 10000px"></section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script> -->
   </body>
 </html>
+
+<!-- <div class="container">
+    <div class="content">
+      <h1>
+        Hi I`m <span>Numan Abbas</span> <br />
+        I am working in <span>Data Science</span> feild
+      </h1>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+      officiis error eum quo, excepturi aperiam dolore laborum repellendus
+      eligendi blanditiis nesciunt doloribus accusantium, ex quas?
+    </p>
+    
+    <div class="content-image">
+      <img src="assets/Untitled-1juklgyu.png" alt="" />
+      <img src="assets/pngwing.com.png" alt="" class="numpy" />
+      <img src="assets/pngaaa.com-4152242.png" alt="" class="matplot" />
+      <img
+        src="assets/6479b9448caa384c54cdeceb1578b5ae.jpg"
+        alt=""
+        class="python"
+      />
+    </div> -->

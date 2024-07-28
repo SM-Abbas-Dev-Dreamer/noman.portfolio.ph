@@ -1,10 +1,20 @@
 const themeToggleButton = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
-const hamburgerButton = document.getElementById('hamburger-menu-icon');
-const hamburgerIcon = document.getElementById('hamburger-icon');
-const hamburger = document.querySelector(".hamburger");
-
 const body = document.body;
+
+const hamburgerButton = document.querySelector('.hamburger-btn');
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+const mobile_navigation = document.querySelector(".mobile-navigation");
+
+
+window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('header');
+    if (window.scrollY > 10) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
 
 themeToggleButton.addEventListener('click', () => {
     body.classList.toggle('dark-theme');
@@ -19,6 +29,16 @@ themeToggleButton.addEventListener('click', () => {
     }
 });
 
+// Set the initial theme based on user preference or default to light theme
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    body.classList.add('dark-theme');
+    themeIcon.classList.remove('fa-sun');
+    themeIcon.classList.add('fa-moon');
+} else {
+    body.classList.add('light-theme');
+}
+
+
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     body.classList.add('dark-theme');
     themeIcon.classList.remove('fa-sun');
@@ -29,9 +49,9 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 
 
     hamburgerButton.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
+        mobile_navigation.classList.toggle('active');
     
-        if (hamburger.classList.contains('active')) {
+        if (mobile_navigation.classList.contains('active')) {
             hamburgerIcon.classList.remove('fa-bars');
             hamburgerIcon.classList.add('fa-xmark');
         } else {
