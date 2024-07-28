@@ -1,10 +1,59 @@
 section{
     margin: 75px 0;
 }
+body.light-theme{
+    --body-bg: rgba(245, 222, 179, 0.575);
+    --text-color: black;
+    --text-color2: #fff;
+    --header-bg: rgb(248, 217, 217);
+    --header-box-shadow: 3px 3px 10px #00000052;
+    --icons-shadow:inset 1px 1px 3px #00000071,
+    inset -1px -1px 3px #00000071;
+    --icon-text-shadow: 1px 1px 5px #333;
+    --heading-shadow:  2px 2px 10px #0000007e;
+    --heading-shadow2:  2px 2px 10px #bb02ab;
+    --button-shadow: 5px 5px 15px #bb02ab,
+    -5px -5px 15px #bb02ab;
+    --border: #bb02ab;
+    
+}
+body.dark-theme {
+    --text-color: white;
+    --body-bg: #180666;
+    --header-bg: rgb(33, 33, 34);
+    --header-box-shadow: 3px 3px  10px #ffffff7c;
+    --heading-shadow:  3px 3px 10px #03a9eb;
+    --icons-shadow:  2px 2px 10px #03a9eb,
+    -2px -2px 10px #03a9eb;
+    --icon-color: #03a9eb;
+    --icon-text-shadow: #03a9eb;
+    --icon-text-shadow: 1px 1px 5px #03a9eb;
+    --icon-text-shadow2: 1px 1px 5px #bb02ab,
+    -1px -1px 5px #bb02ab
+    ,inset 1px 1px 5px #0000007e,
+    inset -1px -1px 5px #0000007e;
+    --text-color2: #000;
+    --heading-shadow2:  2px 2px 10px #c39b75;
+    --button-shadow: 5px 5px 15px #03a9eb,
+    -5px -5px 15px #03a9eb;
+    --border: #03a9eb;
+  
+}
 .container{ 
     width: 90%;
     margin: auto;
     display: flex;
+}
+.container .content h1{
+    color: var(--text-color);
+    text-shadow: var(--heading-shadow);
+}
+.container .content h1 span{
+    color: var(--text-color);
+    text-shadow: var(--heading-shadow2);
+}
+.container .content p{
+    color: var(--text-color);
 }
 .container .container-img{
     width: 50%;
@@ -16,18 +65,19 @@ section{
     gap: 10px;
     position: absolute;
     top: 50%;
-    right: 7%;
+    right: 2%;
     transform: translate(0,-50%);
 }
 .container .social-media-links .link-media{
 
-    background: #000;
+    background: var(--text-color);
+    box-shadow: var(--icon-text-shadow2);
     border-radius: 50%;
     cursor: pointer;
     overflow: hidden;
 }
 .container .social-media-links .link-media a{
-    color: #fff;
+    color: var(--text-color2);
     text-decoration: none;
     transform: translateY(15px);
     display: flex;
@@ -80,25 +130,29 @@ section{
 .swiper-slide .content .buttons button{
     width: 100px;
     height: 30px;
-    background: #000;
-    color: #fff;
-    border: none;
+    background:transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border);
     border-radius: 10px;
     font-weight: 400;
     font-family: cursive;
     font-size: 16px;
     transition: 0.3s;
     cursor: pointer;
+    box-shadow: var(--button-shadow);
 }
 .swiper-slide .content .buttons button:hover{
-    background: #fff;
-    color: #000;
+    color: var(--text-color2);
+    background-color: var(--text-color);
 }
+
 .swiper-slide .content .buttons button.btn-secondary{
+    box-shadow: 0 0 0 #000;
+    border: none;
     background: none;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid var(--text-color);
     border-radius: 0px;
-    color: #000;
+    color: var(--text-color);
     position: relative;
     cursor: pointer;
     
@@ -110,7 +164,7 @@ section{
     left: 0;
     width: 0;
     height: 2px;
-    background: gold;
+    background: var(--text-color2);
     transition: 0.3s;
 }
 .swiper-slide .content .buttons button.btn-secondary:hover::after{
@@ -158,6 +212,7 @@ section{
     bottom: 8%;
     left: 50%;
     transform: translateX(-50%);
+    color: var(--text-color);
     font-size: 25px;
     animation: mouse 3s infinite linear;
 }
