@@ -136,6 +136,7 @@ header .hamburger{
   position: fixed;
   top: 0%;
   right: 5%;
+  z-index: 9;
   display: none;
   justify-content: center;
   align-items: center;
@@ -214,7 +215,7 @@ header .hamburger .hamburger-inner .hamburger-btn button i{
 
   background-color: #000;
   text-align: center;
-  transform: translateY(-150%);
+  transform: translateY(-200%);
   transition: 0.3s;
 }
 .mobile-navigation ul li{
@@ -265,9 +266,10 @@ header .hamburger .hamburger-inner .hamburger-btn button i{
     display: flex;
   }
   .mobile-navigation.active{
-    transform: translateY(0);
+    transform: translateY(-40%);
     display: block;
   }
+  
   header nav .navigation{
     
     display: none;
