@@ -17,7 +17,7 @@ body.light-theme{
 }
 body.dark-theme {
   --text-color: white;
-  --body-bg: #1c005c;
+  background: rgba(33, 33, 34, 0.89);
   --header-bg: rgb(33, 33, 34);
   --header-box-shadow: 3px 3px  10px #ffffff7c;
   --icons-shadow:  2px 2px 10px #03a9eb,
