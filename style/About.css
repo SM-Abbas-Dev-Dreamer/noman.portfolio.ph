@@ -212,5 +212,17 @@ section.about .about-content .about-content-description button{
     section.about .about-cards .about-card{
         width: 300px;
     }
-
+    
+}
+@media(max-width:400px){
+    section.about .about-cards .about-card{
+        width: 250px;
+    }
+    section.about .about-cards .about-card .card-content h2{
+        font-size: 25px;
+    }
+    section.about .about-cards .about-card .card-content p{
+        font-size: 16px;
+    }
+    
 }
