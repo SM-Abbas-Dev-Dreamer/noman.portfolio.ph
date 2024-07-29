@@ -1,0 +1,216 @@
+body.light-theme{
+    --body-bg: rgba(245, 222, 179, 0.575);
+    --text-color: black;
+    --text-color2: #fff;
+    --header-bg: rgb(248, 217, 217);
+    --header-box-shadow: 3px 3px 10px #00000052;
+    --icons-shadow:inset 1px 1px 3px #00000071,
+    inset -1px -1px 3px #00000071;
+    --icon-text-shadow: 1px 1px 5px #333;
+    --heading-shadow:  2px 2px 10px #0000007e;
+    --heading-shadow2:  2px 2px 10px #bb02ab;
+    --button-shadow: 5px 5px 15px #bb02ab,
+    -5px -5px 15px #bb02ab;
+    --border: #bb02ab;
+    --card-bg: #00000044;
+    --icon-text-shadow2: inset 1px 1px 5px #0000007e,
+    inset -1px -1px 5px #0000007e;
+    
+}
+body.dark-theme {
+    --text-color: white;
+    --body-bg: #180666;
+    --header-bg: rgb(33, 33, 34);
+    --header-box-shadow: 3px 3px  10px #ffffff7c;
+    --heading-shadow:  3px 3px 10px #03a9eb;
+    --icons-shadow:  2px 2px 10px #03a9eb,
+    -2px -2px 10px #03a9eb;
+    --icon-color: #03a9eb;
+    --icon-text-shadow: #03a9eb;
+    --icon-text-shadow: 1px 1px 5px #03a9eb;
+    --icon-text-shadow2: 1px 1px 5px #bb02ab,
+    -1px -1px 5px #bb02ab
+    ,inset 1px 1px 5px #0000007e,
+    inset -1px -1px 5px #0000007e;
+    --text-color2: #000;
+    --heading-shadow2:  2px 2px 10px #c39b75;
+    --button-shadow: 5px 5px 15px #03a9eb,
+    -5px -5px 15px #03a9eb;
+    --border: #03a9eb;
+    --card-bg: rgba(255, 255, 255, 0.877);
+  
+}
+section.about{
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    gap: 80px;
+    flex-direction: column;
+}
+section.about h1{
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+    color: var(--text-color);
+    text-shadow: var(--heading-shadow);
+}
+section.about .about-cards{
+    display: flex;
+}
+section.about .about-cards .about-card{
+    width: 28%;
+    margin: auto;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 30px 15px;
+    box-shadow: var(--icon-text-shadow);
+    backdrop-filter: blur(10px);
+}
+section.about .about-cards .about-card .card-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+}
+section.about .about-cards .about-card .card-button button{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid var(--text-color); */
+    border: none;
+    box-shadow: var(--icon-text-shadow2);
+    border-radius: 50%;
+}
+section.about .about-cards .about-card .card-button button i{
+    color: var(--text-color);
+    font-size: 22px;
+}
+section.about .about-cards .about-card .card-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--text-color);
+}
+section.about .about-cards .about-card .card-content h2{
+    font-size: 25px;
+    text-shadow: var(--heading-shadow);
+}
+section.about .about-cards .about-card .card-content p{
+    font-size: 16px;
+}
+section.about .about-content{
+    display: flex;
+    width: 100%;
+}
+section.about .about-content .about-content-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.about .about-content .about-content-img .about-content-img-after{
+    border: 2px solid gold;
+    display: flex;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+section.about .about-content .about-content-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+section.about .about-content .about-content-description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section.about .about-content .about-content-description h4{
+    text-align: left;
+    color: var(--text-color);
+    text-shadow: 2px 2px 10px #00000069;
+    position: relative;
+}
+section.about .about-content .about-content-description h4::after{
+    width: 35%;
+    height: 2px;
+    background: gold;
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: 0;
+}
+
+section.about .about-content .about-content-description h1{
+    text-align: left;
+    text-decoration: none;
+    font-size: 30px;
+    
+}
+section.about .about-content .about-content-description p{
+    font-size: 15px;
+    color: var(--text-color);
+}
+section.about .about-content .about-content-description button{
+    width: 150px;
+    height: 35px;
+    background: none;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    color: var(--text-color);
+    box-shadow: var(--icon-text-shadow2);
+}
+@media(max-width:920px){
+    section.about .about-cards .about-card{
+        width: 25%;
+    }
+    section.about .about-cards .about-card .card-content h2{
+        font-size: 18px;
+    }
+}
+@media(max-width:852px){
+    section.about .about-content{
+        flex-direction: column;
+        gap: 50px;
+    }
+    section.about .about-content .about-content-img{
+        width: 100%;
+    }
+    section.about .about-content .about-content-description{
+        width: 100%;
+    }
+}
+    @media(max-width:723px){
+        section.about .about-cards{
+        flex-direction: column;
+        gap: 20px;
+    }  
+    section.about .about-cards .about-card{
+        width: 400px;
+    }
+    section.about .about-cards .about-card .card-content h2{
+        font-size: 35px;
+    }
+    section.about .about-cards .about-card .card-content p{
+        font-size: 29px;
+    }
+}
+@media(max-width:560px){
+    section.about .about-cards .about-card{
+        width: 300px;
+    }
+
+}

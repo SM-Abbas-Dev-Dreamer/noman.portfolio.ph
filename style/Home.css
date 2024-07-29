@@ -231,3 +231,16 @@ body.dark-theme {
 #home{
     margin-top: 200px;
 }
+.background-images{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -9;
+}
+.background-images img{
+    width: 60%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60%;
+}

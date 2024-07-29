@@ -7,6 +7,8 @@ const body = document.body;
 const hamburgerButton = document.querySelector('.hamburger-btn');
 const hamburgerIcon = document.querySelector('.hamburger-icon');
 const mobile_navigation = document.querySelector(".mobile-navigation");
+const bg_image_dark = document.querySelector(".bg-image-dark")
+const bg_image_light = document.querySelector(".bg-image-light")
 
 themeToggleButton.addEventListener('click', () => {
     body.classList.toggle('dark-theme');
@@ -17,11 +19,15 @@ themeToggleButton.addEventListener('click', () => {
         themeIcon.classList.add('fa-moon');
         dark_img.style.display = 'block';
         light_img.style.display = 'none'; 
+        bg_image_light.style.display = 'none'; 
+        bg_image_dark.style.display = 'block'; 
     } else {
         themeIcon.classList.remove('fa-moon');
         themeIcon.classList.add('fa-sun');
         light_img.style.display = 'block'; 
         dark_img.style.display = 'none';
+        bg_image_light.style.display = 'block'; 
+        bg_image_dark.style.display = 'none'; 
     }
 });
 
