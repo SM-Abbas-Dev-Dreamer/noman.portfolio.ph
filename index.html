@@ -21,9 +21,30 @@
     <link rel="stylesheet" href="style/navbar.css" />
     <link rel="stylesheet" href="style/Home.css" />
     <link rel="stylesheet" href="style/About.css" />
+    <link rel="stylesheet" href="style/skills.css" />
+    <link rel="stylesheet" href="style/services.css" />
+    <link rel="stylesheet" href="style/testimonial.css" />
+    <link rel="stylesheet" href="style/contact.css" />
     <title>Nomi</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "NPpqFoGfkPu5H0s4k",
+          });
+      })();
+</script>
+<script src="js/contact.js"></script>
+<style>
+  html{
+    scroll-behavior: smooth;
+  }
+</style>
   </head>
   <body>
+    <i class="fa-solid fa-computer-mouse"></i>
     <div class="background-images">
       <img class="bg-image-light" src="assets/dots-1.png" alt="" />
       <img class="bg-image-dark" src="assets/dots-white.png" alt="" />
@@ -76,37 +97,37 @@
         <div class="navigation">
           <ul>
             <li>
-              <a class="web-menu" href=""
+              <a class="web-menu" href="#home"
                 ><i class="fa-solid fa-house"></i>
                 <span class="links-title">Home</span></a
               >
             </li>
             <li>
-              <a class="web-menu" href=""
+              <a class="web-menu" href="#about"
                 ><i class="fa-regular fa-user"></i>
                 <span class="links-title">About</span></a
               >
             </li>
             <li>
-              <a class="web-menu" href=""
+              <a class="web-menu" href="#skills"
                 ><i class="fa-regular fa-star"></i>
                 <span class="links-title">Skills</span></a
               >
             </li>
             <li>
-              <a class="web-menu" href=""
+              <a class="web-menu" href="#services"
                 ><i class="fa-solid fa-pen"></i
                 ><span class="links-title">Services</span></a
               >
             </li>
             <li>
-              <a class="web-menu" href=""
+              <a class="web-menu" href="#testimonial"
                 ><i class="fa-solid fa-cube"></i
-                ><span class="links-title">Portfolio</span></a
+                ><span class="links-title">Testimonial</span></a
               >
             </li>
             <li>
-              <a class="web-menu" href=""
+              <a class="web-menu" href="#contact"
                 ><i class="fa-regular fa-envelope"></i>
                 <span class="links-title">Contact</span></a
               >
@@ -131,7 +152,6 @@
     </header>
     <section class="first-page" id="home">
       <div class="container">
-        <i class="fa-solid fa-computer-mouse"></i>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -146,9 +166,10 @@
                   that help clients achieve their goals.
                 </p>
                 <div class="buttons">
-                  <button href="#" class="btn">Hire Me !</button>
-                  <button href="#" class="btn btn-secondary">
-                    Download CV
+                  <button  class="btn">
+                    <a target="Hi" href="https://www.linkedin.com/in/numan-abbas-586b342bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Hire Me !</a></button>
+                  <button   class="btn btn-secondary">
+                  <a href="assets/CV-NUMAN ABBAS 12.pdf" download="Your Download Pdf" >  Download CV </a>
                   </button>
                 </div>
               </div>
@@ -166,9 +187,10 @@
                   industry trends.
                 </p>
                 <div class="buttons">
-                  <button href="#" class="btn">Hire Me !</button>
-                  <button href="#" class="btn btn-secondary">
-                    Download CV
+                  <button  class="btn">
+                    <a target="Hi" href="https://www.linkedin.com/in/numan-abbas-586b342bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Hire Me !</a></button>
+                  <button   class="btn btn-secondary">
+                  <a href="assets/CV-NUMAN ABBAS 12.pdf" download="Your Download Pdf" >  Download CV </a>
                   </button>
                 </div>
               </div>
@@ -184,9 +206,10 @@
                   building efficient and scalable applications
                 </p>
                 <div class="buttons">
-                  <button href="#" class="btn">Hire Me !</button>
-                  <button href="#" class="btn btn-secondary">
-                    Download CV
+                  <button  class="btn">
+                    <a target="Hi" href="https://www.linkedin.com/in/numan-abbas-586b342bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Hire Me !</a></button>
+                  <button   class="btn btn-secondary">
+                  <a href="assets/CV-NUMAN ABBAS 12.pdf" download="Your Download Pdf" >  Download CV </a>
                   </button>
                 </div>
               </div>
@@ -198,22 +221,25 @@
         <div class="container-img">
           <img class="light-img" src="assets/Untitled-1juklgyu.png" alt="" />
           <img class="dark-img" src="assets/Untitled-2juklgyu.png" alt="" />
+          <img class="libriries library1 " src="assets/pngaaa.com-1947296.png" alt="">
+          <img class="libriries library2 " src="assets/pngaaa.com-4152242.png" alt="">
+          <img class="libriries library3 " src="assets/pngaaa.com-8844148.png" alt="">
         </div>
         <div class="social-media-links">
           <div class="link-media">
-            <a href="">
+            <a href="https://www.facebook.com/numan.abbas.39?mibextid=ZbWKwL" target="Hi">
               <i class="fa-brands fa-facebook-f"></i>
               <i class="fa-brands fa-facebook-f"></i>
             </a>
           </div>
           <div class="link-media">
-            <a href="">
+            <a href="https://www.instagram.com/numan1507?igsh=MXQzbGdwNnl4cDRycw==" target="Hi" >
               <i class="fa-brands fa-instagram"></i>
               <i class="fa-brands fa-instagram"></i>
             </a>
           </div>
           <div class="link-media">
-            <a href="">
+            <a href="https://x.com/NumanAbbas72068?s=03" target="Hi" >
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-twitter"></i>
             </a>
@@ -221,7 +247,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about" >
       <h1>About Me</h1>
       <div class="about-cards">
         <div class="about-card">
@@ -282,6 +308,372 @@
         </div>
       </div>
     </section>
+    <section class="skills" id="skills" >
+      <h1>Skills</h1>
+      <div class="skill-content">
+        <div class="content">
+          <h4>Hire my Skills</h4>
+          <h1>I develop my skills regulary to keep me update</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+            voluptatibus.
+          </p>
+          <div class="skills-bars">
+            <div class="bar-outer">
+              <h3>Coding</h3>
+              <div class="bar-inner box bar1"><span class="count">53%</span></div>
+            </div>
+            <div class="bar-outer">
+              <h3>Data Base</h3>
+              <div class="bar-inner box bar2"><span class="count">82%</span></div>
+            </div>
+            <div class="bar-outer">
+              <h3>Data Science</h3>
+              <div class="bar-inner box bar3"><span class="count">31%</span></div>
+            </div>
+          </div>
+          <button> <a target="Hi" href="https://www.linkedin.com/in/numan-abbas-586b342bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Hire Me !</a></button>
+        </div>
+        <div class="content-img">
+          <img src="assets/second2.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="circle-skills">
+      <div class="circle-box">
+        <div class="circle-box-inner">
+          <svg>
+            <circle class="cir1 box" r="68" cy="75" cx="75"></circle>
+          </svg>
+          <div class="circle-cunter"><span>75</span> %</div>
+        </div>
+        <div class="circle-title">Matplot</div>
+      </div>
+      <div class="circle-box">
+        <div class="circle-box-inner">
+          <svg>
+            <circle class="cir2 box" r="68" cy="75" cx="75"></circle>
+          </svg>
+          <div class="circle-cunter"><span>52</span> %</div>
+        </div>
+        <div class="circle-title">Pandas</div>
+      </div>
+      <div class="circle-box">
+        <div class="circle-box-inner">
+          <svg>
+            <circle class="cir3 box" r="68" cy="75" cx="75"></circle>
+          </svg>
+          <div class="circle-cunter"><span>65</span> %</div>
+        </div>
+        <div class="circle-title">Numpay</div>
+      </div>
+      <div class="circle-box">
+        <div class="circle-box-inner">
+          <svg>
+            <circle class="cir4 box" r="68" cy="75" cx="75"></circle>
+          </svg>
+          <div class="circle-cunter"><span>30</span> %</div>
+        </div>
+        <div class="circle-title">TenserFlow</div>
+      </div>
+    </section>
+    <section class="services" id="services" >
+      <h1>My Services</h1>
+      <div class="services-cards-wrap">
+        <div class="services-card">
+          <div class="service-icon"><i class="fa-solid fa-school"></i></div>
+          <h5>Data Analysis and Visualization</h5>
+          <ul>
+            <li>
+              <span>Data Cleaning and Preparation:</span>
+              <p>Processing raw data to make it suitable for analysis.</p>
+            </li>
+            <li>
+              <span>Statistical Analysis:</span>
+              <p>Applying statistical methods to analyze data.</p>
+            </li>
+            <li>
+              <span>Data Visualization: </span>
+              <p>
+                Creating visual representations of data using libraries like
+                Matplotlib, Seaborn, or Plotly.
+              </p>
+            </li>
+            <li>
+              <span>Reporting and Dashboards:</span>
+              <p>
+                Building interactive dashboards with libraries like Dash or
+                Bokeh.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="services-card card-down">
+          <div class="service-icon">
+            <i class="fa-solid fa-cash-register"></i>
+          </div>
+          <h5>Machine Learning and AI</h5>
+          <ul>
+            <li>
+              <span>Data Cleaning and Preparation:</span>
+              <p>Processing raw data to make it suitable for analysis.</p>
+            </li>
+            <li>
+              <span>Statistical Analysis:</span>
+              <p>Applying statistical methods to analyze data.</p>
+            </li>
+            <li>
+              <span>Data Visualization: </span>
+              <p>
+                Creating visual representations of data using libraries like
+                Matplotlib, Seaborn, or Plotly.
+              </p>
+            </li>
+            <li>
+              <span>Reporting and Dashboards:</span>
+              <p>
+                Building interactive dashboards with libraries like Dash or
+                Bokeh.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="services-card">
+          <div class="service-icon"><i class="fa-solid fa-file-word"></i></div>
+          <h5>Automation and Scripting</h5>
+          <ul>
+            <li>
+              <span>Data Cleaning and Preparation:</span>
+              <p>Processing raw data to make it suitable for analysis.</p>
+            </li>
+            <li>
+              <span>Statistical Analysis:</span>
+              <p>Applying statistical methods to analyze data.</p>
+            </li>
+            <li>
+              <span>Data Visualization: </span>
+              <p>
+                Creating visual representations of data using libraries like
+                Matplotlib, Seaborn, or Plotly.
+              </p>
+            </li>
+            <li>
+              <span>DevOps Automation:</span>
+              <p>
+                Automating deployment and infrastructure tasks using tools like
+                Ansible, Docker, or Kubernetes.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="services-card card-down">
+          <div class="service-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <h5>Scientific Computing and Research</h5>
+          <ul>
+            <li>
+              <span>Numerical Computation: </span>
+              <p>
+                Using libraries like NumPy and SciPy for high-performance
+                numerical computations.
+              </p>
+            </li>
+            <li>
+              <span>Simulation and Modeling</span>
+              <p>
+                Creating simulations and models for scientific research and
+                engineering problems.
+              </p>
+            </li>
+            <li>
+              <span>Bioinformatics: </span>
+              <p>Analyzing biological data using libraries like Biopython.</p>
+            </li>
+            <li>
+              <span>Physics and Astronomy:</span>
+              <p>
+                Developing tools and simulations for research in physics and
+                astronomy.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="testimonial" id="testimonial">
+      <div class="content-side">
+        <h1>Collections from Our Customers.</h1>
+        <p>
+          Appropriately implement user friendly e-markets and backend processes.
+          Competently expedite competitive vortals rather than client-based
+          testing procedures. Professionally matrix exceptional schemas
+          vis-a-vis leveraged paradigms. Authoritatively coordinate just in time
+          networks with strategic potentialities.
+        </p>
+        <a href="">Read More</a>
+      </div>
+      <div class="testimonial-side"  >
+        <h2>Testimonials Scroller</h2>
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>
+                Great support, great documentation and you guys done a fantastic
+                job in commenting everything, makes it very easy to customize,
+                so thank you.
+              </p>
+              <span class="testimonial-user">
+                <div class="image">
+                  <img src="assets/perosn.jpg" alt="" />
+                </div>
+                <div class="name">James Smith</div>
+              </span>
+              <div class="ratting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p>
+                I wish that I could choose more than one reason for my 5-star
+                rating! The Design is great, the features are fantastic, the
+                documentation top-notch.
+              </p>
+              <span class="testimonial-user">
+                <div class="image">
+                  <img src="assets/person1.jpg" alt="" />
+                </div>
+                <div class="name">Olivia Brown</div>
+              </span>
+              <div class="ratting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p>
+                Excellent Template really versatile and well documented. Makes
+                anyone look like a design professional.
+              </p>
+              <span class="testimonial-user">
+                <div class="image">
+                  <img src="assets/person2.jpg" alt="" />
+                </div>
+                <div class="name">Mason Thomas</div>
+              </span>
+              <div class="ratting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p>
+                This is the most robust template I've ever worked with. So much
+                can be done with this multi-purpose package. Regular updates and
+                enhancements add tremendous value.
+              </p>
+              <span class="testimonial-user">
+                <div class="image">
+                  <img src="assets/person 4.jpg" alt="" />
+                </div>
+                <div class="name">Mia Clark</div>
+              </span>
+              <div class="ratting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p>
+                I've been using Canvas for months now and it has exceeded my
+                expectations . Their support has been great too.
+              </p>
+              <span class="testimonial-user">
+                <div class="image">
+                  <img src="assets/person 5.jpg" alt="" />
+                </div>
+                <div class="name">Isabella Wilson</div>
+              </span>
+              <div class="ratting">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form" id="contact">
+      <h1>Contact Us</h1>
+      <form id="contact-form">
+        <div class="inputbox">
+          <input type="text" id="name" name="name" required>
+          <label for="name">Name:</label>
+        </div>
+        <div class="inputbox">
+          <input type="email" id="email" name="email" required>
+          <label for="email">Email:</label>
+        </div>
+        <div class="inputbox text-area"> 
+          <textarea id="message" name="message" required></textarea>
+          <label for="message">Message:</label>
+        </div>
+
+          <button type="submit">Send</button>
+      </form>
+      <div class="whatsapp-btn">
+        <a href="https://wa.me/03217562851" target="_blank">
+          <img src="assets/WhatsApp-Logo.wine.png" alt="">
+        </a>
+      </div>
+  </div>
+  <body>
+  
+    <footer style="width: 100%;background: black;color: #fff; text-align: center;" >
+      
+      <p>All right revered &copy; by Dev Developer</p>
+    </footer>
+      
+   
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+      (function() {
+          emailjs.init('nFP-f0Ubi0k53LIMn'); // Replace 'YOUR_USER_ID' with your actual User ID
+      })();
+
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          emailjs.sendForm('service_s73ax5v', 'template_uhzrndl', this)
+              .then(function() {
+                  alert('Message Sent Successfully!');
+              }, function(error) {
+                  alert('Failed to Send Message, Please Try Again');
+                  console.log('FAILED...', error);
+              });
+
+          this.reset();
+      });
+  </script>
 
     <!-- 
     <i class="fa-brands fa-facebook-f"></i>
@@ -300,10 +692,11 @@
     
     <i class="fa-solid fa-phone"></i>
     <i class="fa-brands fa-github"></i> -->
-    <section style="height: 10000px"></section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/script.js"></script>
+   
+  
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script> -->
   </body>
 </html>

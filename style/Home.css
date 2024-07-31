@@ -1,11 +1,13 @@
 section{
     margin: 75px 0;
 }
+body{
+    overflow-x: hidden;
+}
 body.light-theme{
     --body-bg: rgba(245, 222, 179, 0.575);
     --text-color: black;
     --text-color2: #fff;
-    --header-bg: rgb(248, 217, 217);
     --header-box-shadow: 3px 3px 10px #00000052;
     --icons-shadow:inset 1px 1px 3px #00000071,
     inset -1px -1px 3px #00000071;
@@ -20,7 +22,6 @@ body.light-theme{
 body.dark-theme {
     --text-color: white;
     --body-bg: #180666;
-    --header-bg: rgb(33, 33, 34);
     --header-box-shadow: 3px 3px  10px #ffffff7c;
     --heading-shadow:  3px 3px 10px #03a9eb;
     --icons-shadow:  2px 2px 10px #03a9eb,
@@ -131,7 +132,6 @@ body.dark-theme {
     width: 100px;
     height: 30px;
     background:transparent;
-    color: var(--text-color);
     border: 1px solid var(--border);
     border-radius: 10px;
     font-weight: 400;
@@ -141,12 +141,16 @@ body.dark-theme {
     cursor: pointer;
     box-shadow: var(--button-shadow);
 }
+.swiper-slide .content .buttons button a{
+    text-decoration: none;
+    color: var(--text-color);
+}
 .swiper-slide .content .buttons button:hover{
     color: var(--text-color2);
-    background-color: var(--text-color);
+    background-color: var(--text-color2);
 }
 
-.swiper-slide .content .buttons button.btn-secondary{
+.swiper-slide .content .buttons button.btn-secondary {
     box-shadow: 0 0 0 #000;
     border: none;
     background: none;
@@ -193,6 +197,9 @@ body.dark-theme {
         width: 97%;
         position: relative;
     }
+    .fa-computer-mouse{
+        display: none;
+    }
     .swiper{
         width: 80%;
         margin: auto;
@@ -207,9 +214,8 @@ body.dark-theme {
     }
 }
 .fa-computer-mouse{
-    color: #000;
     position: absolute;
-    bottom: 8%;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
     color: var(--text-color);
@@ -243,4 +249,26 @@ body.dark-theme {
     top: 0;
     right: 0;
     height: 60%;
+}
+img.libriries{
+    position: absolute;
+    z-index: 2;
+}
+img.libriries.library1{
+    width: 70px;
+    height: 100px;
+    top: -10%;
+    transform: translateX(-170px);
+}
+img.libriries.library2{
+    width: 70px;
+    height: 80px;
+    top: 30%;
+    transform: translateX(90px);
+}
+img.libriries.library3{
+    width: 100px;
+    height: 50px;
+    top: 90%;
+    transform: translateX(-160px);
 }

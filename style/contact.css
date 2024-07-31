@@ -1,0 +1,108 @@
+.contact-form {
+  width: 100%;
+  margin: 50px 0;
+  background: url("../assets/1.png") no-repeat center center/cover;
+  position: relative;
+}
+.contact-form h1 {
+  text-align: center;
+  font-size: 35px;
+  text-decoration: underline;
+  color: var(--text-color);
+  text-shadow: var(--heading-shadow);
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contact-form form {
+  width: 40%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact-form form .inputbox {
+  width: 80%;
+  height: 35px;
+  margin: 10px auto;
+  position: relative;
+  background: black;
+}
+.contact-form form .inputbox input {
+  width: 100%;
+  height: 100%;
+  color: var(--text-color);
+  background: var(--text-color2);
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+}
+.contact-form form .inputbox label {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  left: 5%;
+  transition: 0.5s;
+  color: var(--text-color);
+}
+.contact-form form .inputbox input:focus ~ label,
+.contact-form form .inputbox input:valid ~ label {
+  transform: translateY(-45px);
+}
+.contact-form form .inputbox.text-area {
+  width: 80%;
+  height: 70px;
+  background: none;
+}
+.contact-form form .inputbox.text-area textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  color: var(--text-color);
+  background: var(--text-color2);
+  outline: none;
+  border: none;
+  padding: 10px 10px;
+}
+.contact-form form .inputbox.text-area label {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transition: 0.5s;
+  color: var(--text-color);
+}
+.contact-form form .inputbox.text-area textarea:focus ~ label,
+.contact-form form .inputbox.text-area textarea:valid ~ label {
+  transform: translateY(-60px);
+}
+.contact-form form button {
+  width: 150px;
+  height: 30px;
+  margin-left: 10%;
+  background: rgba(0, 0, 128, 0.74);
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.whatsapp-btn{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  background: var(--text-color2);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.whatsapp-btn a{
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+}
+.whatsapp-btn a img{
+  width: 100%;
+  height: 100%;
+}
