@@ -43,6 +43,14 @@ header{
   position: fixed;
   top: 0;
   border-bottom: 1px dotted var(--text-color);
+  /* display: none; */
+  transform: translateY(-100px);
+  transition: 2s;
+}
+header.show{
+  display: block;
+  transform: translateY(0px);
+
 }
 header.scrolled{
   height: 50px;

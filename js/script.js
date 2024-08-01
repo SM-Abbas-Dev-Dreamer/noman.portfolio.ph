@@ -81,7 +81,7 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
          if (boxTop < triggerBottom) {
              box.classList.add("show");
          } else {
-             box.classList.remove("show");
+            //  box.classList.remove("show");
          }
      });
  };

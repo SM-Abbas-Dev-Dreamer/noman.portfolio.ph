@@ -52,44 +52,44 @@
     <div class="mobile-navigation">
       <ul>
         <li>
-          <a class="web-menu" href=""
+          <a class="web-menu" href="#home"
             ><i class="fa-solid fa-house"></i>
             <span class="links-title">Home</span></a
           >
         </li>
         <li>
-          <a class="web-menu" href=""
+          <a class="web-menu" href="#about"
             ><i class="fa-regular fa-user"></i>
             <span class="links-title">About</span></a
           >
         </li>
         <li>
-          <a class="web-menu" href=""
+          <a class="web-menu" href="#skills"
             ><i class="fa-regular fa-star"></i>
             <span class="links-title">Skills</span></a
           >
         </li>
         <li>
-          <a class="web-menu" href=""
+          <a class="web-menu" href="#services"
             ><i class="fa-solid fa-pen"></i
             ><span class="links-title">Services</span></a
           >
         </li>
         <li>
-          <a class="web-menu" href=""
+          <a class="web-menu" href="#testimonial"
             ><i class="fa-solid fa-cube"></i
-            ><span class="links-title">Portfolio</span></a
+            ><span class="links-title">Testimonial</span></a
           >
         </li>
         <li>
-          <a class="web-menu" href=""
+          <a class="web-menu" href="#contact"
             ><i class="fa-regular fa-envelope"></i>
             <span class="links-title">Contact</span></a
           >
         </li>
       </ul>
     </div>
-    <header id="header">
+    <header id="header" class="box">
       <nav>
         <div class="logo">
           <img src="assets/6479b9448caa384c54cdeceb1578b5ae.png" alt="" />
@@ -152,7 +152,7 @@
     </header>
     <section class="first-page" id="home">
       <div class="container">
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper box">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="content">
@@ -218,7 +218,7 @@
           <br />
           <div class="swiper-pagination"></div>
         </div>
-        <div class="container-img">
+        <div class="container-img box">
           <img class="light-img" src="assets/Untitled-1juklgyu.png" alt="" />
           <img class="dark-img" src="assets/Untitled-2juklgyu.png" alt="" />
           <img class="libriries library1 " src="assets/pngaaa.com-1947296.png" alt="">
@@ -657,13 +657,13 @@
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
       (function() {
-          emailjs.init('nFP-f0Ubi0k53LIMn'); // Replace 'YOUR_USER_ID' with your actual User ID
+          emailjs.init('bdwaeQHrmq5PBI98B'); // Replace 'YOUR_USER_ID' with your actual User ID
       })();
 
       document.getElementById('contact-form').addEventListener('submit', function(event) {
           event.preventDefault();
 
-          emailjs.sendForm('service_s73ax5v', 'template_uhzrndl', this)
+          emailjs.sendForm('service_52b35m9', 'template_r69dbbs', this)
               .then(function() {
                   alert('Message Sent Successfully!');
               }, function(error) {
